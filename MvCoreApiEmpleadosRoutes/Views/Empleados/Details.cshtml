@@ -1,0 +1,46 @@
+﻿@model MvCoreApiEmpleadosRoutes.Models.Empleado
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div>
+    <h4>Detalles Empleados</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            <h5>ID Empleado</h5>
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdEmpleado)
+        </dd>
+        <dt class = "col-sm-2">
+            <h5>Nombre</h5>
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            <h5>Oficio</h5>
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oficio)
+        </dd>
+        <dt class = "col-sm-2">
+            <h5>ID Departamento</h5>
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdDepartamento)
+        </dd>
+        <dt class = "col-sm-2">
+            <h5>Salario</h5>
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Salario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="EmpleadosOficio">Volver atrás</a>
+</div>
